@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	%sveltekit.head%
+	<title>M2M Home Workout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Here, you'll find a full workout program you can do with no equipment." />
+	<link rel="manifest" href="manifest.json">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="%sveltekit.assets%/maskable_icon.png">
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: "Montserrat", sans-serif;
+			font-size: 1.8rem;
+			line-height: 1.5;
+		}
+
+		*+* {
+			margin-top: 1.5em;
+		}
+
+		html {
+			font-size: 62.5%;
+		}
+
+		body {
+			background-color: #f5f5f5;
+			color: #030303;
+			margin: auto;
+			padding: 2rem;
+			max-width: 50ch;
+		}
+
+		header {
+			font-weight: 500;
+		}
+
+		h1 {
+			font-weight: bold;
+			font-size: 3.2rem;
+			margin-top: 1rem;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: inline-block;
+		}
+
+		button,
+		select {
+			appearance: none;
+			font-weight: 700;
+			margin: 0;
+			padding: 0.5em 1.5em;
+			border: 2px solid #030303;
+			border-radius: 99rem;
+			color: white;
+			background-color: #030303;
+		}
+
+		button:hover,
+		select:hover {
+			cursor: pointer;
+		}
+
+		button:focus,
+		select:focus {
+			color: #030303;
+			background-color: white;
+		}
+
+		@media screen and (max-height: 580px) {
+			html {
+				font-size: clamp(38%, 1.75dvh, 62.5%);
+			}
+		}
+
+		/* implement pwa and equal length centered controls, then upload to github */
+	</style>
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
+</html>
